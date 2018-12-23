@@ -12,5 +12,20 @@
       {{ end }}
     </ul>
     {{ end }}
+
+    {{ if .Site.Params.cv_fr }}
+    <p>
+      <a href="https://dl-web.dropbox.com/get/my_cv_dev_php_fr.pdf?_download_id=4723225926866643157841478800779692738720677784798124152473090138&_notify_domain=www.dropbox.com&_subject_uid=265683383&dl=1&w=AADQrRb_6sqP1geWITHmlB5slLbdpLf4LQekM3lJbD-Piw" style="text-decoration: none;">
+        {{ .Site.Params.cv_fr }}
+      </a>
+    </p>
+    {{ else if .Site.Params.cv_en }}
+    <p>
+      <a href="https://dl-web.dropbox.com/get/my_cv_dev_php_en.pdf?_download_id=010344011988353774939098604525656488776982647272632682871033945915&_notify_domain=www.dropbox.com&_subject_uid=265683383&dl=1&w=AADUSkXAXA1xWhOB2tkAcqJsxD740mEuEdRpG2HAiWg5cQ" style="text-decoration: none;">
+        {{ .Site.Params.cv_en }}
+      </a>
+    </p>
+    {{ end }}
+    
   </div>
 </section>
